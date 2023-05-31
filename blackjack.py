@@ -1,6 +1,10 @@
 def input_deposit():
     deposit = input("Initial Deposit: ")
-    return deposit
+
+    if not deposit.isdigit():
+        print("Deposit has to be a number >= 1.")
+    else:
+        return float(deposit)
 
 
 def main():
