@@ -1,6 +1,5 @@
 import unittest
 from unittest.mock import patch
-from io import StringIO
 from blackjack import input_deposit
 
 class InputDepositTestCase(unittest.TestCase):
@@ -10,12 +9,11 @@ class InputDepositTestCase(unittest.TestCase):
         deposit = input_deposit()
         self.assertEqual(deposit, expected_result)
 
-    @patch('sys.stdout', new_callable=StringIO)
-    @patch('builtins.input', side_effect=['notnumber'])
-    def test_prompt_user_to_input_a_number(self, mock_input, mock_stdout):
-        input_deposit()
-        expected_output = "Deposit has to be a number >= 1.\n"
-        self.assertEqual(mock_stdout.getvalue(), expected_output)
+    @patch('builtins.input', side_effect=['notnumber', '2'])
+    def test_accepts_valid_input_after_invalid_input(self, mock_input):
+        expected_result = 2.0
+        deposit = input_deposit()
+        self.assertEqual(deposit, expected_result)
 
 if __name__ == '__main__':
     unittest.main()

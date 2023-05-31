@@ -3,6 +3,7 @@ def input_deposit():
 
     if not deposit.isdigit():
         print("Deposit has to be a number >= 1.")
+        return input_deposit()
     else:
         return float(deposit)
 
