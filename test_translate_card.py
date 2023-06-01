@@ -11,5 +11,10 @@ class TestTranslateCard(unittest.TestCase):
     def test_ace_of_spades(self):
         self.assertEqual("A♠", translate_card(deck_of_cards.Card((0,1))))
 
+    def test_picture_of_spades(self):
+        self.assertEqual("J♠", translate_card(deck_of_cards.Card((0,11))))
+        self.assertEqual("Q♠", translate_card(deck_of_cards.Card((0,12))))
+        self.assertEqual("K♠", translate_card(deck_of_cards.Card((0,13))))
+
 if __name__ == '__main__':
     unittest.main()
