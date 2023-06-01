@@ -19,8 +19,12 @@ def input_deposit():
     
 def translate_card(card):
     suits = ['♠']
+    specials = {
+        1: 'A'
+    }
+    translated_rank = specials.get(card.rank) if specials.get(card.rank) else card.rank
     
-    return f"{card.rank}{suits[card.suit]}"
+    return f"{translated_rank}{suits[card.suit]}"
 
 
 def main():
