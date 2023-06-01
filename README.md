@@ -7,15 +7,23 @@ Here are the different versions:
 # Rules
 [Rules of the game](https://www.blackjackapprenticeship.com/how-to-play-blackjack/)
 
-# Task 1: User's Deposit
-Prompt the user to deposit a sum of money to start the game.
+# Tasks
+[ ] User's Deposit
+    - Prompt the user to deposit a sum of money to start the game.
 
-# Task 2: Bet Amount
-Get an initial bet amount from the user. Ensure it is not more than user's deposit.
+[ ] Bet Amount
+    - Get an initial bet amount from the user. Ensure it is not more than user's deposit.
 
-# Task 3: Shuttle Deck
-Implement a function / class to get a shuffled deck.
+[ ] Shuttle Deck
+    - Implement a function / class to get a shuffled deck.
 
-# Task 4: Distribute cards to player and Dealer
-Issue 2 cards to the player first before issuing to the dealer.
+[ ] Distribute cards to player and Dealer
+    - Issue 2 cards to the player first before issuing to the dealer.
+
+[ ] Distribute cards to player and Dealer
+    - Issue 2 cards to the player first before issuing to the dealer.
+
+[ ] Is either hand a black jack
+    - Check for an Ace and a value 10 card.
+    - 2 Aces is not black jack. It's either a 2 or 12.
 
