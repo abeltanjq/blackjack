@@ -12,7 +12,7 @@ Get an initial bet amount from the user. Ensure it is not more than user's depos
 
 # Task 3: Shuttle Deck
 Implement a function / class to get a shuffled deck.
-Use a python library called `deck_of_cards`
+Use a python library called [deck_of_cards](https://pypi.org/project/deck-of-cards/0.0.10/)
 ```sh
 pip3 install deck_of_cards
 ```
