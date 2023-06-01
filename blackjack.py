@@ -1,3 +1,8 @@
+def input_bet(deposit):
+    bet = input("Your bet: ")
+    if 0 < int(bet) < deposit:
+        return int(bet)
+
 def input_deposit():
     deposit = input("Initial Deposit: ")
 
