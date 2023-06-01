@@ -1,5 +1,8 @@
 # Blackjack
-Using various programming languages to write blackjack
+Using various programming languages to write blackjack with TDD in mind.
+
+Here are the different versions:
+- [Python](https://github.com/abeltanjq/blackjack/tree/python)
 
 # Rules
 [Rules of the game](https://www.blackjackapprenticeship.com/how-to-play-blackjack/)
