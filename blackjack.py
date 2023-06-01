@@ -19,6 +19,7 @@ def input_deposit():
 def main():
     print("Hi! Please put in your initial deposit (min 1 credit).")
     deposit = input_deposit()
+    bet = input_bet(deposit)
 
 if __name__ == '__main__':
     main()
