@@ -1,3 +1,5 @@
+from deck_of_cards import deck_of_cards
+
 def input_bet(deposit):
     bet = input("Your bet: ")
     if bet.isdigit() and (0 < int(bet) <= deposit):
@@ -14,12 +16,23 @@ def input_deposit():
         return input_deposit()
     else:
         return int(deposit)
+    
+def translate_card(card):
+    suits = ['♠']
+    
+    return f"{card.rank}{suits[card.suit]}"
 
 
 def main():
     print("Hi! Please put in your initial deposit (min 1 credit).")
     deposit = input_deposit()
     bet = input_bet(deposit)
+    cards = deck_of_cards.DeckOfCards()
+    cards.shuffle_deck()
+
+    # Start game
+    player = [cards.give_first_card(), cards.give_first_card()]
+    print(f"Your hand: {translate_card(player[0])} {translate_card(player[1])}")
 
 if __name__ == '__main__':
     main()
