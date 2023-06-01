@@ -1,6 +1,6 @@
 def input_bet(deposit):
     bet = input("Your bet: ")
-    if bet.isdigit() and (0 < int(bet) < deposit):
+    if bet.isdigit() and (0 < int(bet) <= deposit):
         return int(bet)
         
     print("Bet has to be an integer between 0 and your deposit amount")

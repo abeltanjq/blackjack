@@ -18,6 +18,10 @@ class InputBetTestCase(unittest.TestCase):
     @patch('builtins.input', side_effect=['nondigit', '8'])
     def test_non_digit_is_not_accepted_until_a_valid_one_is_given(self, mock_input):
         self.assertEqual(8, input_bet(10))
+    
+    @patch('builtins.input', side_effect='1')
+    def test_bet_and_deposit_can_be_equal(self, mock_input):
+        self.assertEqual(1, input_bet(1))
 
 if __name__ == '__main__':
     unittest.main()
