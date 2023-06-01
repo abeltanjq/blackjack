@@ -18,7 +18,7 @@ def input_deposit():
         return int(deposit)
     
 def translate_card(card):
-    suits = ['♠']
+    suits = ['♠', '♡', '♢', '♣']
     specials = {
         1: 'A',
         11: 'J',
