@@ -41,5 +41,8 @@ def main():
     player = [cards.give_first_card(), cards.give_first_card()]
     print(f"Your hand: {translate_card(player[0])} {translate_card(player[1])}")
 
+    dealer = [cards.give_first_card(), cards.give_first_card()]
+    print(f"Dealer's hand: {translate_card(dealer[0])} XX")
+
 if __name__ == '__main__':
     main()
